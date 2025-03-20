@@ -1,0 +1,41 @@
+.hero {
+    
+    height: 100vh;
+    padding-top: 200px;
+    background-image: url(../../images/overlay.png), url(../../images/coffee_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--light);
+
+    &__container {
+        // position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__intro {
+        font-size: 30px;
+        font-weight: 500;
+    }
+}
+
+h1 {
+    font-family: "Clicker Script";
+    font-size: 300px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.hero__subtitle {
+    font-size: 28px;
+    line-height: 40px;
+    max-width: 750px;
+}
+.hero__btn {
+    width: auto; /* По умолчанию подстраивается под содержимое */
+    align-self: flex-start;
+    // font-family: inherit;   
+      
+    margin-top: 40px;
+}
+.main-btn {
+}

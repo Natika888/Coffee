@@ -1,0 +1,70 @@
+
+
+
+// Потом понять куда его
+.logo {
+    font-family: "Clicker Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    color: var(--light);
+  }
+
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // color: #fff;
+    // height: 80px;
+    // z-index: 1;   
+    &__container{
+      // max-width: 1440px;
+    }
+
+    &__nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      align-items: center;
+    }
+  }
+  
+  
+  .menu {
+    &__link{
+      font-weight: 500;
+      font-size: 18px;
+      color: var(--light);
+    }
+    &__list{
+      width: 33%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__btn {
+      font-size: 18px;
+      font-weight: 500;
+      font-family: inherit;
+      
+
+      &:first-child {
+        margin-right: 35px;
+        color: var(--light);
+      }
+    }
+
+  }
+  
+  .menu__item {
+  }
+  .menu__link {
+  }
+  .colored {
+  }
+  .menu__auth {
+  }
+  .menu__btn {
+  }

@@ -1,0 +1,79 @@
+.footer {
+    padding-top: 162px;
+    padding-bottom: 160px;
+    background-color: var(--coffee);
+    background-image: url(../../images/footer_image.png); 
+    background-size: cover; 
+    color: var(--light); 
+
+    &__container {
+    }
+
+    &__brand {
+        width: 30%;
+    }
+
+    &__title {
+        color: var(--light);
+        font-family: "Clicker Script", cursive;
+    font-weight: 400;
+    font-style: normal;    
+    
+    }
+
+    &__description {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+
+    &__social-item {
+    }
+
+    &__social-link {
+        color: var(--light);
+    }
+
+    &__links {
+        display: flex;
+        width: 70%;
+        justify-content: space-around;
+    }
+
+    &__column {
+    }
+
+    &__column-title {
+        color: var(--light);
+        font-size: 35px;
+    }
+
+    &__column-list {
+        margin-top: 40px;
+        padding-top: 10px;
+    }
+
+    &__column-item {
+        margin-top: 20px;
+    }
+
+    &__column-link {
+        color: var(--light);
+        font-size: 24px;
+    }
+
+    &__contact {
+        margin-top: 30px;
+        font-size: 24px;
+        & a {
+            color: var(--light);
+        }
+    }
+}

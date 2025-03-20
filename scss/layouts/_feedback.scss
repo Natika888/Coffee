@@ -1,0 +1,138 @@
+.feedback {
+    position: relative;
+    margin-top: 80px;
+    padding-bottom: 140px;
+
+    &::before {
+        content: "";
+        position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../../images/coffee_blast2.png);
+    background-size: contain; /* Изображение подгоняется */
+    background-repeat: no-repeat; /* Отключить повторение */
+    // background-position: center;
+    width: 500px; /* Размер изображения */
+    height: 270px;
+    z-index: 2;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../../images/coffee_blast2.png);
+    background-size: contain; /* Изображение подгоняется */
+    background-repeat: no-repeat; /* Отключить повторение */    
+    width: 500px; /* Размер изображения */
+    height: 270px;
+    z-index: 2;
+    rotate: 180deg;
+    }
+    
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+    }
+
+    &__subtitle {
+        font-size: 26px;
+        color: var(--gray);
+        margin-top: 16px;
+        margin-bottom: 45px;
+    }
+
+    &__content {
+        position: relative;
+        background-color: var(--light);
+        border: solid 1px rgba(249, 192, 106, 0.42);
+    }
+
+    &__quote {
+        position: relative;
+        padding: 140px 100px 100px 100px;
+        
+    }
+
+    &__quote-icon {
+        position: absolute;
+        top: 70px;
+        left: 30px;
+        font-size: 296px;
+        line-height: 112px;
+        color: var(--secondary);        
+    }
+
+    &__text {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 48px;
+        color: var(--gray);
+        
+        text-align: center;
+        max-width: 1053px;
+    }
+
+    &__author {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__author-name {
+        font-size: 40px;
+    }
+
+    &__author-role {
+        font-size: 28px;
+        color: var(--gray);
+        margin-top: 16px;
+        margin-bottom: 100px;
+    }
+
+    &__author-image {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 100%;
+        left: 50%;
+
+        & img {
+            border-radius: 16px;
+        }
+        
+        }
+
+    &__navigation {
+    }
+
+    &__arrow {
+        padding: 30px;
+        border-radius: 16px;
+        background-color: var(--primary);               
+    }
+
+    &__arrow--left {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 0; 
+        top: 50%;
+
+    }
+
+    &__icon--right {
+        rotate: 180deg;
+    }
+
+    &__arrow--right {        
+        position: absolute;
+        transform: translate(50%, -50%);
+        right: 0;
+        top: 50%;
+    }
+}

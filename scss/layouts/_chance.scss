@@ -1,0 +1,47 @@
+.chance {
+    position: relative;
+    padding-top: 135px;
+    padding-bottom: 135px;
+
+    background-image: 
+    url('../../images/bg-blur.png'), /* Верхняя картинка */
+    url('../../images/bg-cup.jpg'); /* Нижняя картинка */
+    background-size: cover;
+
+    &__content {
+        width: 50%;
+        color: var(--light);
+    }
+
+    &__title {
+        color: var(--light);
+    }
+    &__description {
+        font-size: 28px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    &__image {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 4;
+    }
+
+    &__after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
+    }
+
+}
+.chance__container {
+}
+
+
+
+.chance__button {
+}

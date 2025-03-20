@@ -1,0 +1,69 @@
+@import './base';
+
+@import './utils/variables';
+@import './utils/utils';
+@import './layouts/header.scss';
+@import './layouts/hero.scss';
+@import './layouts/discover.scss';
+@import './layouts/enjoy';
+@import './layouts/difference';
+@import './layouts/chance';
+@import './layouts/feedback';
+@import './layouts/subscribe';
+
+
+
+//<Шрифт по умолчанию>==========================================================================================
+// $fontFamily: "Playfair Display", serif;
+// $fontSize: 20px;
+//</Шрифт по умолчанию>==========================================================================================
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: $fontFamily;
+    font-style: normal;
+    letter-spacing: 0.2px;
+    // background-color: var(--dark-background, #181818);
+
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+[class*='__container'] {
+    display: flex;
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    // @media (min-width: $bp-tablet) {
+    //     padding-left: 20px;
+    //     padding-right: 20px;
+    // }
+
+    // @media (min-width: $bp-desktop) {
+    //     max-width: 1270px;
+    //     padding-left: 15px;
+    //     padding-right: 15px;
+    // }
+}
+
+// ggh
+[class*='__title'] {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 72px; 
+    letter-spacing: normal;
+    
+}
+
+@import './layouts/footer';
+// @import './layouts/burger';

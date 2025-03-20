@@ -1,0 +1,94 @@
+.subscribe {
+    position: relative;
+    background-image: 
+    url('../../images/bg-blur.png'), /* Верхняя картинка */
+    url('../../images/bg-cup.jpg'); /* Нижняя картинка */
+    background-size: cover;
+    padding: 80px 0;
+
+    &__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        color: var(--light);
+    }
+
+    &__description {
+        font-size: 28px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: var(--light);
+    }
+
+    &__form {
+      width: 55%;
+        display: flex; 
+  justify-content: center;
+  margin-top: 20px;
+    }
+
+    &__input {
+        flex: 1; /* Растягивает инпут на всю доступную ширину */
+  padding: 16px 26px; /* Внутренние отступы для удобства */
+  font-size: 28px; /* Размер текста */
+  border: 1px solid rgba(var(--primary), 0.42); /* Легкая граница */
+  border-radius: 5px 0 0 5px; /* Скругленные углы */
+  outline: none; /* Убирает стандартный обвод при фокусе */
+  transition: border-color 0.3s, box-shadow 0.3s;
+        
+  &:focus {
+    border-color: var(--primary); /* Цвет рамки при фокусе */
+    box-shadow: 0 0 5px rgba(249, 192, 106, 0.5); /* Легкое свечение */
+  }
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.32); /* Цвет текста подсказки */    
+    font-family: $fontFamily;
+  }
+    }
+
+    &__button {
+      font-family: inherit;
+        background-color: #f9c06a; /* Цвет фона */
+  color: var(--coffee); /* Цвет текста */
+  padding: 10px 20px; /* Внутренние отступы */
+  font-size: 28px; /* Размер текста */
+  font-weight: bold; /* Жирный текст */
+  border: none; /* Без рамки */
+  border-radius: 5px; /* Скругленные углы */
+  cursor: pointer; /* Указатель при наведении */
+  transition: background-color 0.3s, transform 0.2s;
+
+  &:hover {
+    background-color: #e0a857; /* Цвет фона при наведении */
+    transform: translateY(-2px); /* Легкое поднятие кнопки */
+  }
+
+  &:active {
+    background-color: #d49750; /* Цвет фона при клике */
+    transform: translateY(1px); /* Обратное движение при клике */
+  }
+    }
+
+    &__decor {
+    }
+
+    &__image {
+    }
+
+    &__image--left {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform:translateY(40%);
+    }
+
+    &__image--right {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: scaleX(-1) translateY(40%);
+    }
+}

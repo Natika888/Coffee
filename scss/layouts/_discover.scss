@@ -1,0 +1,52 @@
+.discover {
+    position: relative;
+    padding: 150px 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+    bottom: -68px;
+    left: 0;
+    background-image: url(../../images/coffee_blast.png);
+    background-size: contain; /* Изображение подгоняется */
+    background-repeat: no-repeat; /* Отключить повторение */
+    // background-position: center;
+    width: 500px; /* Размер изображения */
+    height: 270px;
+    z-index: 2;
+    }
+    &__container {
+        column-gap: 150px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    &__text {
+        margin: 60px 0;
+        font-size: 28px;
+        line-height: 40px;
+        color: var(--gray);
+    }
+
+    &__btn {
+        width: auto; /* По умолчанию подстраивается под содержимое */
+    align-self: flex-start;
+    
+    }
+
+    &__image {
+        width: 50%;
+        max-width: 650px;
+        background-image: url(../../images/cup-coffee.png);
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+

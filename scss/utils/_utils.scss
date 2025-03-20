@@ -1,0 +1,28 @@
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.colored {
+    color: var(--secondary, #02E4C0);
+}
+
+.main-btn {
+    background-color: var(--primary);
+    border-radius: 24px;
+    padding: 14px 25px;
+    font-family: inherit;
+    font-size: 22px;
+    font-weight: bold; 
+}
+
+h2,h3,h4 {
+    color: var(--coffee);
+    font-weight: bold;
+    font-size: 70px;
+}
+
