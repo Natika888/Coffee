@@ -4,8 +4,8 @@
     padding-bottom: 135px;
 
     background-image: 
-    url('../../images/bg-blur.png'), /* Верхняя картинка */
-    url('../../images/bg-cup.jpg'); /* Нижняя картинка */
+    url('../images/bg-blur.png'), /* Верхняя картинка */
+    url('../images/bg-cup.jpg'); /* Нижняя картинка */
     background-size: cover;
 
     &__content {

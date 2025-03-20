@@ -7,7 +7,7 @@
         position: absolute;
     bottom: -68px;
     left: 0;
-    background-image: url(../../images/coffee_blast.png);
+    background-image: url(../images/coffee_blast.png);
     background-size: contain; /* Изображение подгоняется */
     background-repeat: no-repeat; /* Отключить повторение */
     // background-position: center;
@@ -41,7 +41,7 @@
     &__image {
         width: 50%;
         max-width: 650px;
-        background-image: url(../../images/cup-coffee.png);
+        background-image: url(../images/cup-coffee.png);
         background-size: cover;
         background-position: center;
         height: auto;
