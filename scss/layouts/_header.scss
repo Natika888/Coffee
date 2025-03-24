@@ -37,6 +37,11 @@
       font-weight: 500;
       font-size: 18px;
       color: var(--light);
+      transition: color 0.3s;
+
+    &:hover {
+        color: var(--primary);               
+    }
     }
     &__list{
       width: 33%;

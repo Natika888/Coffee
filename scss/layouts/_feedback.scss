@@ -114,7 +114,12 @@
     &__arrow {
         padding: 30px;
         border-radius: 16px;
-        background-color: var(--primary);               
+        background-color: var(--primary);   
+        transition: background-color 0.3s;
+
+        &:hover {
+        background-color: #e0a857; /* Цвет фона при наведении */        
+        }            
     }
 
     &__arrow--left {

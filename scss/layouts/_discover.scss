@@ -17,6 +17,7 @@
     }
     &__container {
         column-gap: 150px;
+        align-items: center;
     }
 
     &__content {
@@ -35,18 +36,26 @@
     &__btn {
         width: auto; /* По умолчанию подстраивается под содержимое */
     align-self: flex-start;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: #e0a857;
+        /* Цвет фона при наведении */        
+    }
     
     }
 
     &__image {
         width: 50%;
-        max-width: 650px;
-        background-image: url(../images/cup-coffee.png);
-        background-size: cover;
-        background-position: center;
-        height: auto;
-        padding-top: 70px;
-        padding-bottom: 70px;
+
+        // max-width: 650px;
+        // background-image: url(../images/cup-coffee.png);
+        // background-size: auto auto;
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // height: auto;
+        // padding-top: 70px;
+        // padding-bottom: 70px;
     }
 }
 
