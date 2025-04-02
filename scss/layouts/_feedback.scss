@@ -77,6 +77,11 @@
         
         text-align: center;
         max-width: 1053px;
+        @media (max-width: 1440px) {
+            font-size: 18px;
+            max-width: 780px;
+            line-height: 36px;
+        }
     }
 
     &__author {
@@ -87,6 +92,9 @@
 
     &__author-name {
         font-size: 40px;
+        @media (max-width: 1440px) {
+            font-size: 32px;
+        }
     }
 
     &__author-role {
@@ -94,6 +102,9 @@
         color: var(--gray);
         margin-top: 16px;
         margin-bottom: 100px;
+        @media (max-width: 1440px) {
+            font-size: 20px;
+        }
     }
 
     &__author-image {

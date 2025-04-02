@@ -34,6 +34,9 @@
         border: solid 1px rgba(249, 192, 106, 0.42);
         padding-bottom: 42px;
         background-color: var(--light);
+        // @media (max-width: 1440px) {
+        //     max-width: 280px;
+        // }
     }
     
 }
@@ -50,6 +53,9 @@
     &__image {
         width: 378px;
         height: auto;
+        @media (max-width: 1440px) {
+            max-width: 280px;
+        }
     }
 
     &__info {
@@ -64,6 +70,9 @@
             font-weight: bold;
             line-height: 45px;
             margin-top: 15px;
+            @media (max-width: 1440px) {
+                font-size: 22px;
+            }
         }
 
     }
@@ -73,12 +82,18 @@
         font-weight: normal;
         margin-top: 8px;
         margin-bottom: 8px;
+        @media (max-width: 1440px) {
+            font-size: 16px;
+        }
     }
 
     &__price {
         font-size: 24px;
         font-weight: bold;
         color: var(--coffee);
+        @media (max-width: 1440px) {
+            font-size: 18px;
+        }
     }
 
     &__button {
@@ -91,6 +106,9 @@
     &:hover {
         background-color: #e0a857;
         /* Цвет фона при наведении */        
+    }
+    @media (max-width: 1440px) {
+        font-size: 16px;
     }
     }
 }

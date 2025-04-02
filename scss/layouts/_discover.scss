@@ -1,6 +1,9 @@
 .discover {
     position: relative;
-    padding: 150px 0;
+    padding: 100px 0;
+    @media (max-width: 1440px) {
+        padding: 50px 0;
+    }
 
     &::before {
         content: "";
@@ -31,6 +34,10 @@
         font-size: 28px;
         line-height: 40px;
         color: var(--gray);
+        @media (max-width: 1440px) {
+            font-size: 20px;
+            line-height: 34px;
+        }
     }
 
     &__btn {
@@ -41,6 +48,9 @@
     &:hover {
         background-color: #e0a857;
         /* Цвет фона при наведении */        
+    }
+    @media (max-width: 1440px) {
+        font-size: 16px;
     }
     
     }

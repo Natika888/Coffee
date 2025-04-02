@@ -18,9 +18,7 @@
     // color: #fff;
     // height: 80px;
     // z-index: 1;   
-    &__container{
-      // max-width: 1440px;
-    }
+    
 
     &__nav {
       width: 100%;
@@ -42,6 +40,10 @@
     &:hover {
         color: var(--primary);               
     }
+
+    @media (max-width: 1440px) {
+      font-size: 14px;
+    }
     }
     &__list{
       width: 33%;
@@ -58,6 +60,10 @@
       &:first-child {
         margin-right: 35px;
         color: var(--light);
+      }
+
+      @media (max-width: 1440px) {
+        font-size: 14px;
       }
     }
 
